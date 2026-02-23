@@ -72,8 +72,8 @@ function addEventListenerForCell(){
             cell.dataset.open="true" 
         }
         if (shipCount === 5) {
-        msgText.innerText = "You Won!";
-        gameMsg.showModal();
+            msgText.innerText = "You Won!";
+            gameMsg.showModal();
         } else if (clickCount >= 8) {
             msgText.innerText = "You Lose!";
             gameMsg.showModal();
