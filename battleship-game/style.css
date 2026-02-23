@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+body{
+    background-color: #E44C3C;
+    padding: 40px;
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 40%;
+    gap: 35px;
+    padding-top: 20px;
+}
+.heading{
+    margin-inline: auto;
+    color: white;
+    text-decoration: underline;
+    font-size: 2.8em;
+    font-weight: 500;
+}
+.rules{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-block: 10px;
+}
+.rules ol{
+ list-style-position: inside;
+}
+.game-area{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    justify-content: center;
+}
+.cell{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+.cell img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.reset{
+    padding: 10px 25px;
+    background-color: white;
+    color: black;
+    margin-inline: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 5px 5px rgba(255,255,255,0.7);
+}
+
+.game-msg[open]{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    top:0%;
+    border: none;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+.msg{
+    background-color: white;
+    position: relative;
+    top: 10%;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.msg h3{
+    color: black;
+    font-size: 3em;
+}
+.ok{
+    margin: auto;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #1E45E2;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
