@@ -31,13 +31,9 @@ function createHtml(){
     let html = ""
     for(let i=0;i<16;i++){
         if(order[i]===1){//it is ship
-            html+=`<div class="cell" data-open="false" data-idx="${i}">
-                <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="ship">
-            </div>`
+            html+=`<div class="cell" data-open="false" data-idx="${i}"></div>`
         }else{
-            html+=`<div class="cell" data-open="false" data-idx="${i}">
-                <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="ship">
-            </div>`
+            html+=`<div class="cell" data-open="false" data-idx="${i}"></div>`
         }
     }
     return html;
@@ -61,14 +57,17 @@ function reset(){
 function addEventListenerForCell(){
     gameArea.addEventListener("click",(e)=>{
         const cell = e.target.closest('.cell');
-        const img = cell.querySelector('img');
         if(cell.dataset.open==="false"){
-            // console.log(`click ${++clickCount}`)
-            img.style.opacity=1;
+            ++clickCount;
             if(order[Number(cell.dataset.idx)]==1){
+                cell.innerHTML=` <img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/battleship-image_e6bWCZ1w4.png" alt="ship">`
                 shipCount++;
-                console.log("Found ship")
+            }else{
+                cell.innerHTML=`<img src="https://ik.imagekit.io/d9mvewbju/Course/BigbinaryAcademy/seamless-pattern-waves-various-shades-blue-vector-underwater-design-96891651_aSd5pmbaM.webp" alt="ship">
+                `
             }
+            const img = cell.querySelector('img');
+            img.style.opacity=1;
             cell.dataset.open="true" 
         }
         if (shipCount === 5) {
