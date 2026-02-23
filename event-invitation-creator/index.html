@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="outer-cont">
+        <div class="inner-cont">
+            <h1 class="heading">Create an Event Invite.</h1>
+            <form id="myForm">
+                <label for="event-name">Event Name</label>
+                <input type="text" 
+                id="event-name" 
+                name="event-name" placeholder="Odisha PX meetup">
+
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date">
+
+                 <label for="start-time">Start Time</label>
+                <input type="time" id="start-time" name="start-time">
+
+                <label for="end-time">End Time</label>
+                <input type="time" id="end-time" name="end-time">
+
+                <label for="event-desc">Event Description</label>
+                <textarea id="event-desc" name="event-desc" rows="3" placeholder="Brief Description of the event"></textarea>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location"  placeholder="Location of the event">
+
+                <button type="submit" class="submit">Create Event</button>
+            </form>
+        </div>
+        <dialog class="all-required">
+           <div class="all-required-content">
+             <div class="close-area">
+                <div class="close-error">❌</div>
+            </div>
+            <h2 class="all-required-heading">Please Fill all the fields.</h2>
+           </div>
+        </dialog>
+
+        <dialog class="invitation">
+            <div class="invitation-content">
+                <div class="inv-heading-area">
+                    <h1>YOU ARE INVITED</h1>
+                    <h3>TO JOIN THE</h3>
+                    <h2>Kerala JS Meetup</h2>
+                </div>
+                <div class="inv-content-area">
+                    <p class="date">December 9, 2026</p>
+                    <p class="time">10:00 AM - 4:00 PM</p>
+                    <p class="location">Kochi, Kerala</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia mollitia deserunt quisquam quod voluptas. Quisquam, dolores ducimus aspernatur odio, iusto quam delectus, maiores tempore molestias repudiandae nobis? Quidem, sunt dolores.</p>
+                </div>
+            </div>
+        </dialog>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
