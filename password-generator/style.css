@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#EAEFFF,#D3DCFF);
+    padding-top: 50px;
+    position: relative;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.area-1{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 35px;
+ background-color: rgba(255, 255, 255, 0.8);
+ padding-block: 50px;
+ border-radius: 15px;
+    width: 90%;
+}
+.area-1 h2{
+    font-weight: 500;
+    font-size: 2.5em;
+}
+.password-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+#password{
+    font-weight: 600;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.copy{
+    padding: 10px ;
+    border: none;
+    outline: none;
+    background-color: #4EB151;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copy:hover{
+    background-color: #45a049;
+}
+.desc{
+    width: 80%;
+    font-weight: 450;
+}
+.length-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.length-area label{
+    font-weight: 500;
+}
+.inp-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.inp-area input{
+    margin-left: 20px;
+}
+.inp-area label{
+    font-weight: 500;
+}
+.area-2{
+    width: 90%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.bullet-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bullet-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ul{
+    list-style-position: inside;
+}
+li{
+    padding-block: 5px;
+    font-weight: 500;
+}
+.current-length{
+    font-weight: 600;
+    width: 30px;
+    height: 20px;
+}
+.notification{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    bottom: 2%;
+}
+.no-option-error{
+    background-color: #E64E3E;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 10px;
+}
+.copy-password-success{
+    background-color: #2BA238;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 10px;
+}

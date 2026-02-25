@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="area-1">
+            <h2>Password Generator</h2>
+                <div class="password-area">
+                    <input type="text" name="password" id="password" disabled value="QF()y<5Q:">
+                    <button class="copy">Copy password</button>
+                </div>
+            <p class="desc">
+                Use the slider, and select from the options below to lengthen your password and strengthen your security Password length (6-24)
+            </p>
+
+            <div class="length-area">
+                <label for="length">Total Characters:</label>
+                <input type="range" id="length" min="6" max="24" value="9">
+                <p class="current-length">9</p>
+            </div>
+            <div class="inp-area">
+                <input type="checkbox" name="numbers" id="numbers"  class="check-boxes" checked>
+                <label for="numbers">Include Numbers</label>
+
+                <input type="checkbox" name="letters" id="letters"  class="check-boxes"checked>
+                <label for="letters">Include Letters</label>
+
+                <input type="checkbox" name="mixed-case" id="mixed-case" class="check-boxes" checked>
+                <label for="mixed-case">Include Mixed Case</label>
+
+                <input type="checkbox" name="punctuations" id="punctuations" class="check-boxes" checked>
+                <label for="punctuations">Include Punctuations</label>
+            </div>
+        </section>
+        <section class="area-2">
+            <section class="bullet-1">
+                <h3>Do you use any of these weak passwords?</h3>
+                <ul>
+                    <li>Password</li>
+                    <li>123456</li>
+                    <li>Qwerty</li>
+                    <li>Your child's name</li>
+                    <li>I always use the same password</li>
+                </ul>
+            </section>
+            <section class="bullet-2">
+                <h3>Why are those passwords are weak?</h3>
+                <ul>
+                    <li>They're easy to guess or crack.
+Really easy!</li>
+                    <li>If one of your logins is compromised, a hacker then has access to all your services.</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <section class="notification">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
