@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    position: relative;
+    background: linear-gradient(to right,#ECF4FD,#B6D9EE);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+} 
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    gap: 15px;
+}
+.inp-area{
+    display: flex;
+    width: 100%;
+}
+#inp{
+    width: 400px;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid gray;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.btn-area{
+    display: grid;
+    grid-template-columns: repeat(5,70px);
+    grid-template-rows: repeat(4,70px);
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #EEEFF1;
+    font-size: 1.5em;
+    user-select: none;
+}
+.operator{
+    background-color: #DB7093;
+    color: white;
+}
+.popup[open] {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    margin: 0;    
+    left: auto;   
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    & h2{
+        font-size: 1em;
+        font-weight: 500;
+    }
+}
+/* width: 200px;
+    transform: translateX(-100%); */
