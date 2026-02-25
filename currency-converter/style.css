@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #FFF3A4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #FAD704;
+    padding: 50px 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.heading{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.inp-area{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    font-weight: 600;
+}
+#amount{
+    height: 35px;
+    width: 80%;
+    outline: none;
+    padding: 5px;
+    font-size: 1.2em;
+}
+.converter-area{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#from-currency{
+    width: 130px;
+    height: 35px;
+    outline: none;
+    padding: 5px;
+}
+#to-currency{
+    width: 130px;
+    height: 35px;
+    outline: none;
+    padding: 5px;
+}
+.submit{
+    height: 35px;
+    width: 80%;
+    background-color: #1E45E1;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.msg{
+    font-weight: 500;
+}
+option{
+    font-weight: bold;
+}

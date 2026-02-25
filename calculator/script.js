@@ -63,7 +63,7 @@ buttons.forEach((btn)=>{
             }
 
         }else{
-            if(curr==="0"){
+            if(curr==="0"||curr==="Infinity"){
                 //We need to replace
                 curr=it;
             }else{
@@ -95,12 +95,6 @@ function applyMathOperation(prev,curr,operator){
             val = a*b;
             break; 
         case "/":
-            //Edge case need to be handles
-            if(b===0) {
-                val=0;
-                showPopup()
-                break;
-            }
             val = a/b;
             break; 
         case "%":
