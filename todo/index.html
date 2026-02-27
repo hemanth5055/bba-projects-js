@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="search-area">
+            <h2>To-Do List</h2>
+            <input type="text" name="search" id="search" placeholder="Search tasks...">
+        </section>
+        <section class="inp-area">
+            <input type="text" name="task" id="task" class="inp" placeholder="Add your to-do task..." >
+            <input type="date" id="date" name="date" class="inp">
+            <input type="time" name="time" id="time" class="inp">
+            <button class="submit">Add Task</button>
+        </section>
+        <section class="tasks-area">
+            <h2>Due Tasks</h2>
+            <div class="tasks">
+                
+            </div>
+        </section>
+    </main>
+    <div class="pop-up-area">
+        <div class="pop-up">
+            <p>Please fill in all fields.</p>
+            <button class="ok">Ok</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
