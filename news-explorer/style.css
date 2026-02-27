@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+body{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 30px;
+    padding-top: 30px;
+}
+.search-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid gray;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
+#search{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    font-size: 1.5em;
+}
+.selection-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.selection-btn-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.category-btn{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.active{
+    background-color: black;
+    color: white;
+}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.news-article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:25px;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.news-article-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.news-article:first-child{
+    grid-column: 1/3;
+}
+.news-article-details p{
+    font-size: 0.8em;
+}
+.news-article-content p{
+    font-size: 0.9em;
+}
+.news-article-content p{
+    line-height: 1.3em;      /* Set your line height */
+    /* max-height: 6em;         line-height (1.5) * lines (4) = 6em */
+    overflow: hidden;
+}
+.show-more-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10px;
+}
+.show-more{
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.show-more:disabled{
+    background-color: gray;
+    color: white;
+    cursor:not-allowed;
+}
+span{
+    color: red;
+}
